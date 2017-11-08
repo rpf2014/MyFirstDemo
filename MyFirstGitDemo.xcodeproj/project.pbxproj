@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B1DE4261CA977BDAB7037689 /* libPods-MyFirstGitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46BE7DC9E403484E913C0A09 /* libPods-MyFirstGitDemo.a */; };
 		D4DDBD4F1FB1F6F000FB68F4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4DDBD4E1FB1F6F000FB68F4 /* AppDelegate.m */; };
 		D4DDBD521FB1F6F000FB68F4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4DDBD511FB1F6F000FB68F4 /* ViewController.m */; };
 		D4DDBD551FB1F6F000FB68F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4DDBD531FB1F6F000FB68F4 /* Main.storyboard */; };
@@ -35,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		46BE7DC9E403484E913C0A09 /* libPods-MyFirstGitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyFirstGitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		46EDB47AAA4E1D185F867D43 /* Pods-MyFirstGitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFirstGitDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyFirstGitDemo/Pods-MyFirstGitDemo.release.xcconfig"; sourceTree = "<group>"; };
+		A994AF2F44874AF7573ABD1D /* Pods-MyFirstGitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFirstGitDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyFirstGitDemo/Pods-MyFirstGitDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		D4DDBD4A1FB1F6F000FB68F4 /* MyFirstGitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFirstGitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4DDBD4D1FB1F6F000FB68F4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D4DDBD4E1FB1F6F000FB68F4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1DE4261CA977BDAB7037689 /* libPods-MyFirstGitDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A8649ED6CCB5BDC99BD3D33 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46BE7DC9E403484E913C0A09 /* libPods-MyFirstGitDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		39E9AE3E103260B78D77755B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A994AF2F44874AF7573ABD1D /* Pods-MyFirstGitDemo.debug.xcconfig */,
+				46EDB47AAA4E1D185F867D43 /* Pods-MyFirstGitDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D4DDBD411FB1F6F000FB68F4 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +107,8 @@
 				D4DDBD651FB1F6F000FB68F4 /* MyFirstGitDemoTests */,
 				D4DDBD701FB1F6F000FB68F4 /* MyFirstGitDemoUITests */,
 				D4DDBD4B1FB1F6F000FB68F4 /* Products */,
+				39E9AE3E103260B78D77755B /* Pods */,
+				2A8649ED6CCB5BDC99BD3D33 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,9 +163,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D4DDBD761FB1F6F000FB68F4 /* Build configuration list for PBXNativeTarget "MyFirstGitDemo" */;
 			buildPhases = (
+				ED8339793ADBCB7BA127C843 /* [CP] Check Pods Manifest.lock */,
 				D4DDBD461FB1F6F000FB68F4 /* Sources */,
 				D4DDBD471FB1F6F000FB68F4 /* Frameworks */,
 				D4DDBD481FB1F6F000FB68F4 /* Resources */,
+				50F709380C7A891F170C4960 /* [CP] Embed Pods Frameworks */,
+				A9A65CE89511F7AEFC44AF15 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -259,6 +286,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		50F709380C7A891F170C4960 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyFirstGitDemo/Pods-MyFirstGitDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9A65CE89511F7AEFC44AF15 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyFirstGitDemo/Pods-MyFirstGitDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED8339793ADBCB7BA127C843 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyFirstGitDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D4DDBD461FB1F6F000FB68F4 /* Sources */ = {
@@ -428,6 +506,7 @@
 		};
 		D4DDBD771FB1F6F000FB68F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A994AF2F44874AF7573ABD1D /* Pods-MyFirstGitDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -442,6 +521,7 @@
 		};
 		D4DDBD781FB1F6F000FB68F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46EDB47AAA4E1D185F867D43 /* Pods-MyFirstGitDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
