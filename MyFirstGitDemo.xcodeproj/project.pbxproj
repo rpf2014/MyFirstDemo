@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B1DE4261CA977BDAB7037689 /* libPods-MyFirstGitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46BE7DC9E403484E913C0A09 /* libPods-MyFirstGitDemo.a */; };
+		D49DB02A1FB429D700FBDF8B /* RootVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D49DB0281FB429D700FBDF8B /* RootVC.m */; };
+		D49DB02B1FB429D700FBDF8B /* RootVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D49DB0291FB429D700FBDF8B /* RootVC.xib */; };
 		D4DDBD4F1FB1F6F000FB68F4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4DDBD4E1FB1F6F000FB68F4 /* AppDelegate.m */; };
 		D4DDBD521FB1F6F000FB68F4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4DDBD511FB1F6F000FB68F4 /* ViewController.m */; };
 		D4DDBD551FB1F6F000FB68F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4DDBD531FB1F6F000FB68F4 /* Main.storyboard */; };
@@ -39,6 +41,9 @@
 		46BE7DC9E403484E913C0A09 /* libPods-MyFirstGitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyFirstGitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		46EDB47AAA4E1D185F867D43 /* Pods-MyFirstGitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFirstGitDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyFirstGitDemo/Pods-MyFirstGitDemo.release.xcconfig"; sourceTree = "<group>"; };
 		A994AF2F44874AF7573ABD1D /* Pods-MyFirstGitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFirstGitDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyFirstGitDemo/Pods-MyFirstGitDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		D49DB0271FB429D700FBDF8B /* RootVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootVC.h; sourceTree = "<group>"; };
+		D49DB0281FB429D700FBDF8B /* RootVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootVC.m; sourceTree = "<group>"; };
+		D49DB0291FB429D700FBDF8B /* RootVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootVC.xib; sourceTree = "<group>"; };
 		D4DDBD4A1FB1F6F000FB68F4 /* MyFirstGitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFirstGitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4DDBD4D1FB1F6F000FB68F4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D4DDBD4E1FB1F6F000FB68F4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -125,6 +130,9 @@
 		D4DDBD4C1FB1F6F000FB68F4 /* MyFirstGitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				D49DB0271FB429D700FBDF8B /* RootVC.h */,
+				D49DB0281FB429D700FBDF8B /* RootVC.m */,
+				D49DB0291FB429D700FBDF8B /* RootVC.xib */,
 				D4DDBD4D1FB1F6F000FB68F4 /* AppDelegate.h */,
 				D4DDBD4E1FB1F6F000FB68F4 /* AppDelegate.m */,
 				D4DDBD501FB1F6F000FB68F4 /* ViewController.h */,
@@ -265,6 +273,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D49DB02B1FB429D700FBDF8B /* RootVC.xib in Resources */,
 				D4DDBD5A1FB1F6F000FB68F4 /* LaunchScreen.storyboard in Resources */,
 				D4DDBD571FB1F6F000FB68F4 /* Assets.xcassets in Resources */,
 				D4DDBD551FB1F6F000FB68F4 /* Main.storyboard in Resources */,
@@ -343,6 +352,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D49DB02A1FB429D700FBDF8B /* RootVC.m in Sources */,
 				D4DDBD521FB1F6F000FB68F4 /* ViewController.m in Sources */,
 				D4DDBD5D1FB1F6F000FB68F4 /* main.m in Sources */,
 				D4DDBD4F1FB1F6F000FB68F4 /* AppDelegate.m in Sources */,
@@ -512,6 +522,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 44J4M7A3TP;
 				INFOPLIST_FILE = MyFirstGitDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zto.ztoExpress.MyFirstGitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -527,6 +538,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 44J4M7A3TP;
 				INFOPLIST_FILE = MyFirstGitDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zto.ztoExpress.MyFirstGitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
