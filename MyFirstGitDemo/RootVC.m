@@ -31,7 +31,6 @@
      additionalSafeAreaInsets.top = 44.0
      additionalSafeAreaInsets.bottom = 34.0
      */
-    //现在sdk的模拟器都是最新版本的sdk
     //所以用模拟器都是最新的
     if (@available(iOS 11.0, *)) {
         self.additionalSafeAreaInsets = UIEdgeInsetsMake(0, 0, -30, 0);
